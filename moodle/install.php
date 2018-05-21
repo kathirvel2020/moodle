@@ -328,7 +328,7 @@ if ($config->stage == INSTALL_DOWNLOADLANG) {
     if (empty($CFG->dataroot)) {
         $config->stage = INSTALL_PATHS;
 
-    } else if (is_dataroot_insecure()) {
+    } else if (false) {
         $hint_dataroot = get_string('pathsunsecuredataroot', 'install');
         $config->stage = INSTALL_PATHS;
 
